@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="#292c2f" Foreground="White" Height="700" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="95*"/>
+            <ColumnDefinition Width="175*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="114*"/>
+            <RowDefinition Height="114*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Задание 1" FontSize="25" FontFamily="Shentox" Grid.Column="1" VerticalAlignment="Top" Margin="3,25,4.6,0" HorizontalAlignment="Center" FontWeight="DemiBold" Height="30" Width="114"/>
+
+        <TextBlock FontSize="22" FontWeight="DemiBold" Grid.Row="1" Margin="9,32.4,115.6,7.2" Grid.ColumnSpan="2"><Run Text="1 катет"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="firstMean" VerticalContentAlignment="Center" FontSize="22"  Background="#742c2f" HorizontalContentAlignment="Left" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Margin="11,32.6,38.6,31"/>
+
+        <TextBlock FontSize="22" FontWeight="DemiBold" Grid.Row="1" Margin="4,113.4,0,39.6" Grid.RowSpan="3"><Run Text="2 катет"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="secondMean" VerticalContentAlignment="Center" FontSize="22"  Background="#742c2f" HorizontalContentAlignment="Left" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Margin="10,113.4,39.6,3.872" Grid.RowSpan="2"/>
+
+        <TextBlock Text="Ответ:" FontSize="22" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Right" Margin="0,30.4,10,9"/>
+        <TextBlock x:Name="Answer" TextAlignment="Center" FontSize="22" Background="#742c2f" FontWeight="DemiBold" Grid.Row="4" Margin="10,0.4,39.6,22" Grid.ColumnSpan="2" Grid.Column="1" RenderTransformOrigin="0.5,0.5"/>
+
+
+        <Button x:Name="BtnOk" Content="Ок" FontSize="30" Click="BtnOk_Click" BorderThickness="2" Background="#422c2f" Width="150" Height="56" HorizontalAlignment="Center" Grid.ColumnSpan="2" VerticalAlignment="Center" Grid.Row="5" Margin="171,29,0.6,29.4"/>
+
+    </Grid>
+</Window>
